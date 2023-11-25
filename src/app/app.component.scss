@@ -3,11 +3,13 @@ $font-family-url: "https://db.onlinewebfonts.com/c/800e985f75a5a56c2f7b4be502d28
 
 $fortnite-font-color: #fffffd;
 $fortnite-bg-color: #35c4ea;
+$menu-bar-color: #202020;
+$menu-selected-color: #35c4ea;
+$body-bg-color: #212121;
 
 .header {
   color: whitesmoke;
-  background-color: $fortnite-bg-color;
-  background-image: url('path/to/your-image.png');
+  background-color: $menu-bar-color;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 1rem;
@@ -16,14 +18,14 @@ $fortnite-bg-color: #35c4ea;
 .fortnite-title {
   color: $fortnite-font-color;
   font-family: "Burbank Big Condensed Bold", sans-serif;
-  font-size: 77px;
+  font-size: 75px;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
 .menu-bar {
-  background-color: $fortnite-bg-color;
+  background-color: $menu-bar-color;
 }
 
 .div {
