@@ -8,7 +8,7 @@ import { FortniteMapComponent } from './fortnite-map/fortnite-map.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'season', component: FortniteSeasonComponent },
+  { path: 'current-season', component: FortniteSeasonComponent },
   { path: 'battle-pass', component: BattlePassComponent },
   { path: 'map', component: FortniteMapComponent },
 ];
