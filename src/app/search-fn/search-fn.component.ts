@@ -1,15 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { MenuService } from '../service/menu.service';
 
 @Component({
-  selector: 'app-search-fn',
-  templateUrl: './search-fn.component.html',
-  styleUrls: ['./search-fn.component.scss']
+	selector: 'app-search-fn',
+	templateUrl: './search-fn.component.html',
+	styleUrls: ['./search-fn.component.scss']
 })
-export class SearchFnComponent implements OnInit {
 
-  constructor() { }
+export class SearchFnComponent {
+	public menuItems: any = '';
+    public expandedSearchbar: boolean = false;
 
-  ngOnInit(): void {
-  }
+	constructor(private menuService: MenuService) {
+		this.menuItems = menuService.menuItems;
+	}
 
+    public searchIconClicked() {
+        this.expandedSearchbar = !this.expandedSearchbar;
+    }
+
+	public menuSelected(menuItemSelected: string) {
+		
+	}
 }

@@ -1,0 +1,62 @@
+$suggestion-hover-bg-color: #202020;
+$suggestion-hover-text-color: whitesmoke;
+
+.search-container {
+    margin: 0px 10px 10px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.search-box {
+    height: 40px;
+	width: 250px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 5px;
+}
+.search-box.open {
+	animation: openSearchBox 0.4s ease;
+}
+.search-box.close {
+	animation: closeSearchBox 0.4s ease;
+}
+
+.search-icon {
+	color: whitesmoke;
+	margin: 15px 10px 15px 15px;
+	cursor: pointer;
+}
+.search-box.open {
+  animation: openSearchBox 0.4s ease;
+}
+
+.suggestion:hover {
+	background-color: $suggestion-hover-bg-color;
+	color: $suggestion-hover-text-color;
+}
+
+@keyframes openSearchBox {
+	from {
+		width: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	to {
+		width: 250px;
+		padding-left: 10px;
+		padding-right: 5px;
+	}
+}
+@keyframes closeSearchBox {
+	from {
+		width: 250px;
+		padding-left: 10px;
+		padding-right: 5px;
+	}
+	to {
+		width: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

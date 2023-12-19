@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SeasonDetailsService } from '../service/season-details.service';
 
 @Component({
   selector: 'app-fortnite-season',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fortnite-season.component.scss']
 })
 export class FortniteSeasonComponent implements OnInit {
+	public seasonDetails: any = '';
+		
+	constructor(private seasonDetailsService: SeasonDetailsService) {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+	ngOnInit(): void {
+		this.seasonDetails = this.seasonDetailsService.seasonDetails;
+	}
 
 }

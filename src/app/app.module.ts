@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatIconModule } from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,13 @@ import { FortniteSeasonComponent } from './fortnite-season/fortnite-season.compo
 import { BattlePassComponent } from './battle-pass/battle-pass.component';
 import { FortniteMapComponent } from './fortnite-map/fortnite-map.component';
 import { SearchFnComponent } from './search-fn/search-fn.component';
+import { MenuService } from './service/menu.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatSelectModule } from '@angular/material/select';
+import { MatOptionModule } from '@angular/material/core';
 
 @NgModule({
     declarations: [
@@ -20,9 +28,18 @@ import { SearchFnComponent } from './search-fn/search-fn.component';
     ],
     imports: [
         BrowserModule,
-        AppRoutingModule
+        AppRoutingModule,
+        BrowserAnimationsModule,
+		MatIconModule,
+		MatButtonModule,
+		MatInputModule,
+		MatAutocompleteModule,
+		MatSelectModule,
+		MatOptionModule,
     ],
-    providers: [],
+    providers: [
+      MenuService
+    ],
     bootstrap: [
         AppComponent
     ]

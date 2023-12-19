@@ -8,29 +8,45 @@ $menu-selected-color: #35c4ea;
 $body-bg-color: #212121;
 
 .header {
-  color: whitesmoke;
-  background-color: $menu-bar-color;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 1rem;
+    color: whitesmoke;
+    background-color: $menu-bar-color;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem;
 }
 
 .fortnite-title {
-	color: $fortnite-font-color;
-	font-family: "Burbank Big Condensed Bold", sans-serif;
-	font-size: 75px;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
+    color: $fortnite-font-color;
+    font-family: "Burbank Big Condensed Bold", sans-serif;
+    font-size: 75px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+	margin-top: 25px;
 }
 
 .menu-bar {
-	background-color: $menu-bar-color;
+    background-color: $menu-bar-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
 .div {
-	margin: auto;
-	padding: 10px;
-	text-align: center;
-	font-size: medium;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: medium;
+}
+
+.nav-link {
+    margin-right: 15px;
+}
+
+.selected-menu {
+	background-color: $menu-selected-color;
+	color: $body-bg-color !important;
+	border: none;
+	border-radius: 10px;
 }
