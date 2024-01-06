@@ -1,4 +1,9 @@
 {
-  "editor.detectIndentation": false,
-  "editor.tabSize": 4
+	"workbench.colorTheme": "Colorful Dark+",
+	"workbench.colorCustomizations": {
+		"statusBar.background": "#2e2e2e",
+		"statusBarItem.remoteBackground": "#2a2a2a"
+	},
+	"editor.detectIndentation": false,
+	"editor.tabSize": 4
 }
