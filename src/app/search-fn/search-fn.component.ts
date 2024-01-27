@@ -19,7 +19,7 @@ export class SearchFnComponent {
         this.expandedSearchbar = !this.expandedSearchbar;
     }
 
-	public menuSelected(menuItemSelected: string) {
+	public routeTo_selectedMenu(menuItemSelected: string) {
 		
 	}
 }

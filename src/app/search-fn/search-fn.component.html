@@ -1,11 +1,12 @@
 <div class="search-container">
-	<input matInput type="text" class="search-box" *ngIf="expandedSearchbar" placeholder="Search...." [matAutocomplete]="auto"[class.open]="expandedSearchbar" [class.close]="!expandedSearchbar"/>
-    <mat-autocomplete #auto="matAutocomplete" class="suggestion-box">
-		<mat-option class="suggestion" *ngFor="let menuItem of menuItems" [value]="menuItem.name" (onSelectionChange)="menuSelected(menuItem.key)">
-		  {{ menuItem.name }}
+	<input matInput type="text" class="search-box" *ngIf="expandedSearchbar" placeholder="Search...." [matAutocomplete]="auto" [class.open]="expandedSearchbar" [class.close]="!expandedSearchbar">
+	<mat-autocomplete #auto="matAutocomplete" class="suggestion-box">
+		<mat-option class="suggestion" *ngFor="let menuItem of menuItems" [value]="menuItem.name" (onSelectionChange)="routeTo_selectedMenu(menuItem.key)">
+			{{menuItem.name}}
 		</mat-option>
-	  </mat-autocomplete>
-	<mat-icon class="search-icon" *ngIf="!expandedSearchbar; else closeSearchbar" (click)="searchIconClicked()">search</mat-icon>
+	</mat-autocomplete>
+	<mat-icon class="search-icon" *ngIf="!expandedSearchbar; else closeSearchbar"
+		(click)="searchIconClicked()">search</mat-icon>
 	<ng-template #closeSearchbar>
 		<mat-icon class="search-icon" *ngIf="expandedSearchbar" (click)="searchIconClicked()">close</mat-icon>
 	</ng-template>
