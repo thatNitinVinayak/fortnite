@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+	providedIn: 'root'
 })
 
 export class SeasonDetailsService {
@@ -15,3 +15,5 @@ export class SeasonDetailsService {
 		endDateAndTime: new Date('2024-03-08T12:30:00'),
 	}
 }
+
+// Date & Time Format:	YYY-MM-DDTHH:MM:SS
