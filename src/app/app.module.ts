@@ -16,15 +16,17 @@ import { MatInputModule } from '@angular/material/input';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatSelectModule } from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
+import { MenuBarComponent } from './menu-bar/menu-bar.component';
 
 @NgModule({
     declarations: [
         AppComponent,
+		MenuBarComponent,
+		SearchFnComponent,
         HomeComponent,
         FortniteSeasonComponent,
         BattlePassComponent,
         FortniteMapComponent,
-        SearchFnComponent,
     ],
     imports: [
         BrowserModule,
@@ -38,11 +40,11 @@ import { MatOptionModule } from '@angular/material/core';
 		MatOptionModule,
     ],
     providers: [
-      MenuService
+		MenuService
     ],
     bootstrap: [
         AppComponent
     ]
 })
 
-export class AppModule { }
+export class AppModule {}
