@@ -1,0 +1,22 @@
+$fortnite-font-color: #FFFFFD;
+$fortnite-bg-color: #35C4EA;
+$menu-bar-color: #131920;
+$menu-hover-color: transparent;
+$menu-hover-border: #35C4EA;
+$menu-selected-color: #35C4EA;
+$body-bg-color: #151B21;
+
+.nav-item {
+	font-size: larger;
+}
+.nav-link {
+	margin-left: 7px;
+    margin-right: 7px;
+}
+
+.selected-menu {
+	background-color: $menu-selected-color;
+	color: $body-bg-color !important;
+	border-radius: 7px;
+	height: 40px;
+}
