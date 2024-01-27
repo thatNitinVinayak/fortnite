@@ -8,6 +8,8 @@ export class SeasonDetailsService {
 	public seasonDetails: any = {
 		chapterSeason: 'Chapter 5 Season 1',
 		chapterSeason_short: 'C5S1',
+		chapterNum: 5,
+		seasonNum: 1,
 		seasonName: 'Underground',
 		startDate: '3 December 2023',
 		endDate: '8 March 2024',
