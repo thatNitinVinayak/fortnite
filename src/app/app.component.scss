@@ -3,18 +3,25 @@ $font-family-url: "https://db.onlinewebfonts.com/c/800e985f75a5a56c2f7b4be502d28
 
 $fortnite-font-color: #FFFFFD;
 $fortnite-bg-color: #35C4EA;
-$menu-bar-color: #05013B;
+$menu-bar-color: #131920;
 $menu-selected-color: #35C4EA;
-$body-bg-color: #212121;
+$body-bg-color: #151B21;
 
 .header {
-    color: whitesmoke;
+    color: $fortnite-font-color;
     background-color: $menu-bar-color;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 1rem;
 }
 
+.fortnite-logo {
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+	height: auto;
+	width: 15%;
+}
 .fortnite-title {
     color: $fortnite-font-color;
     font-family: "Burbank Big Condensed Bold", sans-serif;
@@ -24,13 +31,6 @@ $body-bg-color: #212121;
     align-items: center;
 	margin-top: 25px;
 }
-.fortnite-logo {
-	display: block;
-	margin: 0 auto;
-	margin-top: 10px;
-	height: auto;
-	width: 15%;
-}
 
 .menu-bar {
     background-color: $menu-bar-color;
@@ -38,24 +38,4 @@ $body-bg-color: #212121;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-}
-
-.div {
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-    font-size: medium;
-}
-
-.nav-item {
-	font-size: larger;
-}
-.nav-link {
-    margin-right: 15px;
-}
-
-.selected-menu {
-	background-color: $menu-selected-color;
-	color: $body-bg-color !important;
-	border-radius: 7px;
 }

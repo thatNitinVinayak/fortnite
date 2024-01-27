@@ -1,27 +1,10 @@
 <header class="header">
-    <!-- <h1 class="fortnite-title">FORTNITE</h1> -->
 	<img src="../../assets/images/fortniteFont.png" alt="Fortnite Logo" class="fortnite-logo">
 </header>
 
 <div class="menu-bar">
 	<div class="menu-bar-left-content">
-		<nav class="navbar navbar-expand-lg">
-			<a class="navbar-brand" href="#"></a>
-			<button class=navbar-toggler type="button" data-toggle="collapse" data-target="#navbarNav">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<div class="d-flex flex-column">
-					<ul class="navbar-nav">
-						<li class="nav-item" *ngFor="let menuItem of menuItems">
-							<a class="nav-link text-white" [routerLink]=[menuItem.key] (click)="menuItemSelected(menuItem.key)" [class.selected-menu]="menuSelected === menuItem.key">
-								{{ menuItem.name }}
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+		<app-menu-bar></app-menu-bar>
 	</div>
 	<div class="menu-bar-right-content">
         <app-search-fn></app-search-fn>
